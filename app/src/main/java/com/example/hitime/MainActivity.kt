@@ -34,23 +34,29 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainComponent() {
+
     Column(verticalArrangement = Arrangement.Top,
     horizontalAlignment = Alignment.Start,
     modifier = Modifier
         .fillMaxSize()
         .background(Color(0xFF495E57))) {
+
         Text(text = "Hi-tea",
             fontSize = 32.sp,
             color = Color(0xFFC0A313),
-            modifier = Modifier.padding(start = 10.dp)
+            modifier = Modifier.padding(start = 20.dp, top = 20.dp)
             )
+
         Text(text = "Chicago",
             fontSize = 24.sp,
             color = Color(0xFFC0A313),
-            modifier = Modifier.padding(start = 10.dp)
+            modifier = Modifier.padding(start = 20.dp)
             )
+
+
         Row(Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.Center) {
+
             Button(onClick = { /*TODO*/ },
                 shape = RoundedCornerShape(10.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)
@@ -60,6 +66,8 @@ fun MainComponent() {
 
             Image(painter = painterResource(id = R.drawable.ic_launcher_background),
                 contentDescription = null, Modifier.height(100.dp))
+
+
         }
     }
 }
