@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HiTime</string>
+    <string name="title">HiTea</string>
+    <string name="location">Islamabad</string>
+    <string name="description">Lemon Tea</string>
+    <string name="orderbuttontext">Order Take Away</string>
 </resources>
